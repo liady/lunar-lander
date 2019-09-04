@@ -5,8 +5,6 @@ import CameraControls from "./CameraControls";
 import { getCamera, getRenderer, getScene } from "./threeSetup";
 
 const Universe = () => {
-  const [color, changeColor] = useState("0000ff");
-
   return (
     <SceneManager
       getCamera={getCamera}
@@ -20,14 +18,7 @@ const Universe = () => {
       }}
     >
       <CameraControls />
-      <Earth color={Number(`0x${color}`)} />
-      <div
-        style={{
-          width: "100px",
-          padding: "10px"
-        }}
-      >
-      </div>
+      <Earth />
     </SceneManager>
   );
 };

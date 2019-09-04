@@ -25,6 +25,7 @@ const ThreeJSManager = ({
     scene: sceneRef.current,
     camera: cameraRef.current,
     canvas: canvasRef.current,
+    renderer: rendererRef.current,
     timer,
   };
 
